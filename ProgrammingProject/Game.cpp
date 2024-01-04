@@ -304,7 +304,7 @@ void beginmission()//go on advanture /quest
 bool questchoice(int& qchoice)
 {
 
-    if (cin.fail() || qchoice < 1 || qchoice > 5)
+    if (cin.fail() || qchoice < 1 || qchoice > 3)
     {
         cin.clear();  // Clear eror flag
         cin.ignore();  // Discard input
@@ -431,11 +431,11 @@ void combat(Quest& quest)
 
 bool attackchoice(int& attack_choice)
 {
-    if (cin.fail() || attack_choice < 1 || attack_choice > 5)
+    if (cin.fail() || attack_choice < 1 || attack_choice > 3)
     {
         cin.clear();  // Clear error flag
         cin.ignore();  // Discard invalid input
-        cout << "\nInvalid input. Please enter a number between 1 and 5." << endl;
+        cout << "\nInvalid input. Please enter a number between 1 and 3." << endl;
         return false;
     }
 
